@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzbuzz</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập vào số thữ nhất: "))
+        let b = parseInt(prompt("Nhập vào số thứ hai: "))
+        total = 0
+        for( i=a; i<=b; i+=1){
+          total = total + 1
+          if (total%3==0&&total%5==0){
+              alert("FizzBuzz")
+              continue
+          }
+          if (total%3==0){
+              alert("Fizz")
+              continue
+          }
+          if(total%5==0){
+              alert("Buzz")
+              continue
+          } 
+        
+          alert(total)
+        }
+    </script>
+</body>
+</html>
